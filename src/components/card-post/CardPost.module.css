@@ -1,0 +1,21 @@
+.cardPost {
+  background-color: aqua;
+}
+.cardPostTitle {
+  padding: 8px;
+}
+.cardPostHeader {
+  padding: 8px;
+}
+.cardPostHeader img {
+  width: 100%;
+  height: 200px;
+}
+.cardPostContent {
+  text-align: justify;
+  padding: 8px;
+}
+
+.postAuthorName {
+  padding: 8px;
+}
