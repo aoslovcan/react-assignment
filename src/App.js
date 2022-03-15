@@ -1,11 +1,15 @@
+import React, { useEffect } from "react";
 import "./App.css";
-import React from "react";
+import Routes from "./routes/Routes";
+import HomePage from "./layouts/HomePage/HomePage";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <p>Replace later</p>
-    </div>
+    <BrowserRouter>
+      Replace later
+      <Routes />
+    </BrowserRouter>
   );
 }
 export default App;
