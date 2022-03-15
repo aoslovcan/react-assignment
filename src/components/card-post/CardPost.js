@@ -5,7 +5,7 @@ const CardPost = (props) => {
   console.log(`${props.message} CardPost`);
   return (
     <div className={`col-3 ${style.cardPost}`}>
-      <div className={`${style.postAuthorName}`}>Josip Mucak</div>
+      <div className={`${style.postAuthorName}`}>Name Surname</div>
       <div className={`${style.cardPostTitle}`}>
         <h3>Lorem ipsum</h3>
       </div>
