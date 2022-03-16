@@ -1,8 +1,16 @@
 .cardPost {
-  background-color: aqua;
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+}
+
+.cardPost:hover {
+  color: grey;
 }
 .cardPostTitle {
   padding: 8px;
+  height: 80px;
+  text-transform: capitalize;
 }
 .cardPostHeader {
   padding: 8px;
@@ -18,4 +26,6 @@
 
 .postAuthorName {
   padding: 8px;
+  font-style: italic;
+  font-weight: lighter;
 }
