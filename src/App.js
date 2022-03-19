@@ -11,7 +11,6 @@ library.add(faUser);
 function App() {
   return (
     <BrowserRouter>
-      Replace later
       <Routes />
     </BrowserRouter>
   );

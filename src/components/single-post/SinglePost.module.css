@@ -1,0 +1,25 @@
+.singlePost {
+}
+.postTitle {
+  font-size: 31px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 80%;
+}
+.singlePostImg {
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5px;
+}
+
+.singlePostBody {
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.singlePostAuthor {
+  font-style: italic;
+}

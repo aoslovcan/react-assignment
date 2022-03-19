@@ -1,18 +1,24 @@
 import React from "react";
+import style from "./SinglePost.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SinglePost = (props) => {
-  if (props.postData) {
-    console.log(props.postData);
-  }
-
   return (
-    <div className="row">
-      <div className="col-12">
-        <h3>{props.postData.title}</h3>
-        <p>{props.postData.body}</p>
+    <>
+      <div className={`${style.singlePost}`}>
+        <h3 className={`${style.postTitle} col-12`}>{props.postData.title}</h3>
+        <div
+          className={`${style.singlePostImg} col-12`}
+          style={{ backgroundImage: `url(${props?.imgUrl})` }}
+        ></div>
+        <span className={`${style.singlePostAuthor}`}>
+          {localStorage.getItem("authorName")}
+        </span>
+        <p className={`${style.singlePostBody} col-12`}>
+          {props.postData.body}
+        </p>
       </div>
-    </div>
+    </>
   );
 };
-
 export default SinglePost;

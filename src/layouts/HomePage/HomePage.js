@@ -22,17 +22,19 @@ const HomePage = (props) => {
 
   const getPostAuthor = (id) => {
     let user = userData.filter((user) => user.id === id);
-    return user[0]?.name;
+    return user[0];
   };
 
   const getAllDataPosts = (posts) => {
     let allPostsData = posts.map((post) => {
       let userID = getPostAuthor(post.userId);
+      console.log(userID?.name);
       return {
         id: post.id,
         title: post.title,
         body: post.body,
-        author: userID,
+        authorName: userID?.name,
+        authorId: userID?.id,
       };
     });
     setPostsData(allPostsData);
@@ -68,7 +70,7 @@ const HomePage = (props) => {
                   <CardPost
                     key={i}
                     id={post.id}
-                    authorData={post.author}
+                    authorData={post.authorName}
                     message={props.message}
                     title={post.title}
                     imgUrl={"https://picsum.photos/200/300"}
