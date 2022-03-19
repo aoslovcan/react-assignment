@@ -14,7 +14,7 @@ function Search(props) {
       const items = [...props?.dataToSearch];
       let search = searchValue?.trim().toLowerCase();
       let filteredItems = items.filter((item) => {
-        return item.author.toLowerCase().match(search);
+        return item.authorName.toLowerCase().match(search);
       });
       if (filteredItems.length) {
         props.setFiltered(filteredItems);

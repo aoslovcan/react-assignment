@@ -7,7 +7,7 @@ let postdata = [
     id: 1,
     title: "Test title",
     body: "This is test body",
-    author: "Clara Clarkson",
+    authorName: "Clara Clarkson",
   },
 ];
 
