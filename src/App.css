@@ -1,3 +1,25 @@
+* {
+  font-family: "Comic Sans MS", serif;
+}
 input#search-input {
-  outline-offset: 0px;
+  outline-offset: 0;
+}
+.container {
+  max-width: 1500px !important;
+}
+
+.user-icon {
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 50px;
+  padding: 8px;
+  margin-bottom: -11px;
+  background: #a52a2a;
+}
+
+.go-back-button {
+  background: #a52a2a;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
 }
