@@ -3,7 +3,7 @@
 .postTitle {
   font-size: 31px;
   text-align: left;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
   max-width: 80%;
 }
