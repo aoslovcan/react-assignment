@@ -16,10 +16,3 @@ input#search-input {
   margin-bottom: -11px;
   background: #a52a2a;
 }
-
-.go-back-button {
-  background: #a52a2a;
-  padding: 20px;
-  position: fixed;
-  top: 50%;
-}
