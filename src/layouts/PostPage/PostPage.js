@@ -4,7 +4,6 @@ import SinglePost from "../../components/single-post/SinglePost";
 import PostComments from "../../components/post-comments/PostComments";
 import style from "./PostPage.module.css";
 import { useParams } from "react-router-dom";
-
 const PostPage = (props) => {
   const { id } = useParams();
   const [postDetail, setPostDetail] = useState();
@@ -24,7 +23,6 @@ const PostPage = (props) => {
 
   return (
     <>
-      <span className="go-back-button">Go back</span>
       <div className="container" data-testid="post-page">
         <div className="row">
           <div className="col-12">
