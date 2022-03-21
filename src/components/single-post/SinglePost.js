@@ -3,6 +3,8 @@ import style from "./SinglePost.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const SinglePost = (props) => {
+  console.log(`${props?.message} SinglePost`);
+
   return (
     <>
       <div className={`${style.singlePost}`}>

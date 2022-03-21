@@ -10,7 +10,7 @@ function Routes(props) {
       <Route exact path="/posts">
         <HomePage message={helloMessage} />
       </Route>
-      <Route exact path="/posts/:id">
+      <Route exact path="/post/:id">
         <PostPage message={helloMessage} />
       </Route>
       <Route exact path="/">

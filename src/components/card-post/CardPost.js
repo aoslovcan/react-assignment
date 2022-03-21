@@ -10,9 +10,10 @@ const CardPost = (props) => {
     localStorage.setItem("authorName", props?.authorData);
   };
   return (
-    <div className="col-3">
+    <div className="col-3" data-testid="card-post">
       <Link
-        to={`posts/${props.id}`}
+        data-testid="post-link"
+        to={`post/${props.id}`}
         onClick={saveDataToStorage}
         className={` ${style.cardPost}`}
       >
@@ -25,7 +26,7 @@ const CardPost = (props) => {
         <div className={`${style.cardPostHeader}`}>
           <img src={`${props.imgUrl}`} alt="img" />
         </div>
-        <div className={`${style.cardPostContent}`}>{props.content}</div>
+        <div className={`${style.cardPostContent}`}>{props?.content}</div>
       </Link>
     </div>
   );
