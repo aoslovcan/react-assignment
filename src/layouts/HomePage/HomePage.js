@@ -79,7 +79,7 @@ const HomePage = (props) => {
                   />
                 );
               })
-            : null}
+            : "Loading..."}
         </div>
       </div>
     </div>

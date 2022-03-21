@@ -36,20 +36,22 @@ const PostPage = (props) => {
             )}
           </div>
           <div className="col-8 offset-2">
-            <h5>Comments</h5>
-            {postComments
-              ? postComments.map((comment, i) => {
-                  return (
-                    <PostComments
-                      key={i}
-                      name={comment.name}
-                      body={comment.body}
-                      email={comment.email}
-                      message={props?.message}
-                    />
-                  );
-                })
-              : null}
+            <h5>Comments:</h5>
+            {postComments ? (
+              postComments.map((comment, i) => {
+                return (
+                  <PostComments
+                    key={i}
+                    name={comment.name}
+                    body={comment.body}
+                    email={comment.email}
+                    message={props?.message}
+                  />
+                );
+              })
+            ) : (
+              <p>Loading...</p>
+            )}
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ const CardPost = (props) => {
         <div className={`${style.cardPostHeader}`}>
           <img src={`${props.imgUrl}`} alt="img" />
         </div>
-        <div className={`${style.cardPostContent}`}>{props.content}</div>
+        <div className={`${style.cardPostContent}`}>{props?.content}</div>
       </Link>
     </div>
   );
