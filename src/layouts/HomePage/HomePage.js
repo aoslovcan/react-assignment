@@ -10,6 +10,8 @@ const HomePage = (props) => {
   const [postsData, setPostsData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
+  console.log(userData);
+
   useEffect(() => {
     getPosts().then((res) => {
       setPosts(res);
@@ -46,6 +48,7 @@ const HomePage = (props) => {
     }
   }, [posts, userData]);
 
+  /*istanbul ignore next*/
   useEffect(() => {
     if (filteredData?.length) {
       setPostsData(filteredData);
@@ -55,7 +58,7 @@ const HomePage = (props) => {
   }, [filteredData, posts, userData]);
 
   return (
-    <div className="container">
+    <div className="container" data-testid="home-page">
       <div className="row">
         <Search
           placeholder="Find post by user data"
