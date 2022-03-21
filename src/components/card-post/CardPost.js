@@ -13,7 +13,7 @@ const CardPost = (props) => {
     <div className="col-3" data-testid="card-post">
       <Link
         data-testid="post-link"
-        to={`posts/${props.id}`}
+        to={`post/${props.id}`}
         onClick={saveDataToStorage}
         className={` ${style.cardPost}`}
       >
