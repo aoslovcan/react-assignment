@@ -10,8 +10,9 @@ const CardPost = (props) => {
     localStorage.setItem("authorName", props?.authorData);
   };
   return (
-    <div className="col-3">
+    <div className="col-3" data-testid="card-post">
       <Link
+        data-testid="post-link"
         to={`posts/${props.id}`}
         onClick={saveDataToStorage}
         className={` ${style.cardPost}`}
