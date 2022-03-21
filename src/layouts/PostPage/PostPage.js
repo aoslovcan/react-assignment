@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { getPostDetails, getPostComments } from "../../api/allApis";
 import SinglePost from "../../components/single-post/SinglePost";
 import PostComments from "../../components/post-comments/PostComments";
-import style from "./PostPage.module.css";
 import { useParams } from "react-router-dom";
 const PostPage = (props) => {
   const { id } = useParams();
