@@ -10,8 +10,6 @@ const HomePage = (props) => {
   const [postsData, setPostsData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
-  console.log(userData);
-
   useEffect(() => {
     getPosts().then((res) => {
       setPosts(res);
