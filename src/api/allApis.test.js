@@ -1,7 +1,6 @@
 import React from "react";
 import { getPosts, getUsers, getPostDetails, getPostComments } from "./allApis";
 import * as api from "../utils/apiClient";
-//import {get} from '../utils/apiClient';
 
 describe("All apis", () => {
   const apiMockReturn = { mockData: "test" };
